@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Børre The BoyToy</h1>  
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Book din BoyToy for en måned</p>
+        </section>
+        <section id="signup">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Epost:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Passord:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <label for="month">Reservert måned:</label>
+                <input type="month" id="month" name="month" required>
+                <br>
+                <button type="submit">Book</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Børre</p>
+    </footer>
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Den valgte måneden er desverre full');
+        });
+    </script>
+</body>
+</html>
