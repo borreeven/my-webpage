@@ -1,0 +1,73 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Black background */
+    color: #800080; /* Purple text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background: #000; /* Black background */
+    color: #800080; /* Purple text */
+    padding: 10px 0;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main content styling */
+main {
+    width: 100%;
+    max-width: 600px;
+}
+
+section {
+    background: #000; /* Black background */
+    color: #800080; /* Purple text */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form button {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #000; /* Black background */
+    color: #800080; /* Purple text */
+    width: 100%;
+}
